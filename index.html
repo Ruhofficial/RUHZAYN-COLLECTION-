@@ -14,7 +14,7 @@ a{color:inherit;text-decoration:none}button,input{font:inherit}
 header{height:88px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#020714;position:relative;z-index:5}
 .brand{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:30px;letter-spacing:3px;white-space:nowrap}.brand-mark{font-size:39px;line-height:1;color:#e7bd73}.brand small{display:block;text-align:center;font:10px Arial;letter-spacing:5px;margin-top:2px}
 nav{display:flex;gap:34px;align-items:center;font:13px Arial,sans-serif;color:#e6ddcd;letter-spacing:.5px}nav a:hover,.active{color:var(--gold)}
-.head-actions{display:flex;gap:20px;align-items:center;font:22px Arial;color:var(--gold)}.head-actions a{cursor:pointer}
+.head-actions{display:flex;gap:20px;align-items:center;font:22px Arial;color:var(--gold)}.head-actions a{cursor:pointer}.head-actions .cart-link{display:inline-flex;align-items:center;gap:7px;color:var(--gold2);transition:color .2s,filter .2s}.head-actions .cart-link:hover{color:var(--gold);filter:drop-shadow(0 0 6px rgba(217,173,98,.65))}.head-actions .cart-link svg{width:23px;height:23px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.head-actions .cart-link sup{display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:18px;padding:0 5px;border-radius:20px;background:var(--gold);color:#081426;font:bold 10px Arial,sans-serif;line-height:1}
 .hero{min-height:570px;display:grid;grid-template-columns:1fr 1.05fr;align-items:center;padding:45px 6%;gap:25px;background:radial-gradient(ellipse at 76% 45%,#10274c 0,#07152a 38%,#020713 78%);overflow:hidden}
 .hero-copy{padding:25px 0 35px;max-width:620px}.eyebrow{display:flex;align-items:center;gap:18px;color:var(--gold);font:13px Arial;letter-spacing:4px}.eyebrow:before,.eyebrow:after{content:"";height:1px;width:55px;background:var(--gold)}
 h1{font-size:clamp(48px,6.7vw,92px);font-weight:400;line-height:.98;letter-spacing:1px;color:#e7bd78;margin:24px 0 8px;text-shadow:0 3px 22px #000}.hero-sub{font-size:clamp(19px,2.4vw,30px);letter-spacing:8px;color:#f1e5d1;margin:0 0 24px}.hero-copy p{color:#c6c8d0;font-size:17px;line-height:1.8;max-width:510px}
@@ -36,7 +36,7 @@ h1{font-size:clamp(48px,6.7vw,92px);font-weight:400;line-height:.98;letter-spaci
 <header>
 <a class="brand" href="#"><span class="brand-mark">❧</span><span>RUHZAYN<small>COLLECTION</small></span></a>
 <nav><a class="active" href="#">HOME</a><a href="#collections">COLLECTION</a><a href="#shop">SHOP</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav>
-<div class="head-actions"><a href="#shop" aria-label="Search">⌕</a><a href="#cart" aria-label="Cart">🛒 <sup id="count" style="font-size:11px">0</sup></a></div>
+<div class="head-actions"><a href="#shop" aria-label="Search">⌕</a><a class="cart-link" href="#cart" aria-label="Shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><sup id="count">0</sup></a></div>
 </header>
 <main>
 <section class="hero">
